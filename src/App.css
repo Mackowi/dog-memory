@@ -1,0 +1,44 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    background-color: #fcbf49;
+    color: #003049;
+    font-weight: 600;
+    font-size: 3rem;
+    gap: 1rem;
+}
+
+.logo {
+    color: #003049;
+    width: 2rem;
+}
+
+.game {
+	flex-grow: 1;
+	background-color: #eae2b7;
+	display: flex;
+	justify-content: center;
+}
+
+.scores {
+    display: flex;
+    color: #003049;
+    font-size: 2rem;
+    margin: 2rem;
+    gap: 20rem;
+    font-weight: 600;
+}
