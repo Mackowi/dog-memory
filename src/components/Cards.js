@@ -2,15 +2,7 @@ import React from 'react'
 import Card from './Card'
 
 
-export default function Cards({ dogs, round, clickedDogs }) {
-
-  if (clickedDogs.length === 15) {
-    return (
-      <div className='cards'>
-          GOOD BOI!
-      </div>
-    )
-  }
+export default function Cards({ dogs, round }) {
 
   const dogCards = [];
   for (let i = 0; i < dogs.length; i++) {

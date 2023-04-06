@@ -61,14 +61,24 @@ export default function Game() {
     }
   }
 
-  console.log(clickedDogs)
-
-  return (
-    <>
-    <div className='game'>
-      <ScoreBoard score={score} bestScore={bestScore}/>
-      <Cards dogs={shuffle(dogs)} round={round} clickedDogs={clickedDogs}/>
-    </div>
-    </>
-  )
+  if (clickedDogs.length === 15) {
+      return (
+        <div className='game' style={{
+          justifyContent: 'center',
+        }}>
+            <div className='winMsg'>
+              YOU WON! GOOD BOI!
+            </div>
+        </div>
+      )
+  } else {
+    return (
+      <>
+      <div className='game'>
+        <ScoreBoard score={score} bestScore={bestScore}/>
+        <Cards dogs={shuffle(dogs)} round={round}/>
+      </div>
+      </>
+    )
+  }
 }
