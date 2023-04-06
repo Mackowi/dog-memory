@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../assets/dog-bone.png'
 
-function Header() {
+export default function Header() {
     return (
       <>
       <div className='header'>MEMORY DOGS
@@ -10,5 +10,3 @@ function Header() {
       </>
     )
 }
-
-export default Header
